@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Debt Calculator</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- <script src="/sleepDebtCalc.js"></script> -->
+    <script src="/extra.js" async></script>
+  </head>
+  <body>
+    <h1>This is a Sleep Debt Calculator</h1>
+
+    <div>
+      <p class="average">
+        Average hours of sleep you need to feel fully rested:
+
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this); weeklyRequiredTotal()"
+          id="average"
+        />
+        per night.
+      </p>
+      <!-- <input type="button" value="Calculate"  /> -->
+      <br
+    </div>
+    <p id="averageTotal" class="average"></p>
+
+    <p class="weekdays">Hours of sleep you've gotten this week:</p>
+    <div class="days">
+      <p>
+        Monday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="monday"
+        />
+      </p>
+      <p>
+        Tuesday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="tuesday"
+        />
+      </p>
+      <p>
+        Wednesday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="wednesday"
+        />
+      </p>
+      <p>
+        Thursday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="thursday"
+        />
+      </p>
+      <p>
+        Friday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="friday"
+        />
+      </p>
+      <p>
+        Saturday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="saturday"
+        />
+      </p>
+      <p>
+        Sunday
+        <input
+          type="number"
+          value=""
+          style="width: 40px"
+          onchange="handleChange(this);"
+          id="sunday"
+        />
+      </p>
+    </div>
+    <br />
+    <input
+      type="button"
+      value="Calculate"
+      onclick="everyDaySum(); totalDebt()"
+    />
+    <p id="yourTotal"></p>
+
+    <p id="sleepDebt"></p>
+    <p></p>
+  </body>
+</html>

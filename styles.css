@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(30, 31, 47);
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  /* background-image: url(/nature.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.days {
+  display: inline-block;
+  text-align: right;
+}
+
+/* .weekdays {
+  margin-top: 80px;
+} */
+
+/* .averageTotal {
+  margin-top: 0px;
+} */
+
+.average {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
